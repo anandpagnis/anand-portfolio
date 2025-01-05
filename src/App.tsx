@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Sun, Moon } from 'lucide-react';
 import './App.css';
 import serverdesign from './assets/serverdesign.svg';
@@ -145,7 +145,7 @@ const App = () => {
 
                 {/* Scrollable Projects Container */}
                 <div className="w-screen flex overflow-x-scroll snap-x snap-mandatory gap-0 px-4 no-scrollbar">
-                    {projects.map((project, index) => (
+                    {projects.map((project) => (
                         <div
                             key={project.id}
                             className="flex-shrink-0 w-screen px-11 flex items-center snap-center flex-row"
