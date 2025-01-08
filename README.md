@@ -4,6 +4,6 @@
 This is my personal portfolio website 
 
 ## Technologies Used
-- **TypeScript
-- **CSS
+- TypeScript
+- CSS
 
