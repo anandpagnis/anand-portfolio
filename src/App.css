@@ -137,7 +137,18 @@ body.dark h1 {
   overflow: visible;
 }
 
+.gradient-bullet-light {
+  background: -webkit-linear-gradient(90deg, hsla(351, 75%, 45%, 1) 0%, hsla(275, 85%, 41%, 1) 100%);
+  border-radius: 50%;  /* Make it round */
+}
+
+.gradient-bullet-dark {
+  background: linear-gradient(90deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);
+  border-radius: 50%;  /* Make it round */
+}
+
 body.dark h2{
+  text-transform: uppercase;
   text-decoration: white;
   padding: 5px 0;
   overflow: visible;
