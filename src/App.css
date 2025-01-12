@@ -1,4 +1,3 @@
-/* Base Styles for Both Themes */
 
 .flex-container {
   display: flex;
@@ -131,20 +130,23 @@ body.dark {
 }
 
 body.dark h1 {
-  background: -webkit-linear-gradient(90deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);  -webkit-background-clip: text;
+  background: -webkit-linear-gradient(90deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 5px 0;
   overflow: visible;
 }
 
+
 .gradient-bullet-light {
+
   background: -webkit-linear-gradient(90deg, hsla(351, 75%, 45%, 1) 0%, hsla(275, 85%, 41%, 1) 100%);
   border-radius: 50%;  /* Make it round */
 }
 
 .gradient-bullet-dark {
   background: linear-gradient(90deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);
-  border-radius: 50%;  /* Make it round */
+  border-radius: 50%;
 }
 
 body.dark h2{
@@ -196,7 +198,6 @@ body.dark .theme-icon {
   color: #ffffff;
 }
 
-/* Navigation Styles */
 .navbar {
   padding-top: 40px;
   width: 100%;
@@ -210,7 +211,6 @@ body.dark .theme-icon {
 }
 
 
-/* Responsive Styles */
 @media (max-width: 768px) {
   .theme-switch {
     width: 40px;
@@ -439,5 +439,40 @@ four { from {
   animation: move-right 1.5s infinite, blink 1s infinite;
 }
 
+/*media hover*/
+.image-container {
+  position: relative;
+  display: inline-block;
 
+}
 
+.image {
+  display: block;
+  transition: opacity 0.5s ease;
+}
+
+.image-container:hover .image {
+  opacity: 0.4;
+}
+
+.image-container:hover {
+  background-color: #E3DAC9;
+}
+
+.logos {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.image-container:hover .logos {
+  opacity: 1;
+  pointer-events: auto;
+}
